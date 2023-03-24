@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: 350px;
+
+  margin: 10px;
+}
+
+.image-list img {
+  width: 250px;
+  height: 350px;
+}
+.center {
+  margin: 40px;
+}
+
+/* .button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #009ffd, #2a2a72);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+} */
+
+/* input{
+  width: 320px;
+  border:none;
+  border-radius: 16px;
+  padding: 2px;
+  margin: 10px;
+  background: black;
+  box-shadow: 0px 3px 15px rgba(84,80,83,0.1);
+  font-size: 35px;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(212, 162, 162);
+}
+
+input::placeholder{
+  color:rgb(53, 215, 215);
+  font-family: monospace;
+  text-align: center;
+  font-size: small; 
+} */
+
+.container{
+  width: 100%;
+  padding: 5%;
+  background-position: center;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+.search-bar input{
+  background-color: #e8d7d7;
+  display: flex;
+  flex: 1;
+  border: 0;
+  outline: none;
+  /* border-radius: 60px; */
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #7d3939;
+}
+
+::placeholder{
+  color: #3e1b55da;
+  background-color: transparent;
+  background: none;
+}
+
+.search-bar button img{
+  width: 25px;
+}
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+  background: transparent;
+}
+
+.searchText{
+  background: none;
+}
+
+/* .searchText:focus{
+  outline: none;
+} */
