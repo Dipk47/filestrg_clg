@@ -6,6 +6,11 @@ const Modal = ({ setModalOpen, contract }) => {
     await contract.allow(address);
     setModalOpen(false);
   };
+  const removeallow = async () => {
+    const address = document.querySelector(".address").value;
+    await contract.disallow(address);
+    setModalOpen(true);
+  };
   useEffect(() => {
     const accessList = async () => {
       const addressList = await contract.shareAccess();
@@ -49,6 +54,7 @@ const Modal = ({ setModalOpen, contract }) => {
               Cancel
             </button>
             <button onClick={() => sharing()}>Share</button>
+            <button onClick={() => removeallow()}>Disallow</button>
           </div>
         </div>
       </div>

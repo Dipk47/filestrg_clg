@@ -45,7 +45,9 @@ const Display = ({ contract, account }) => {
       <div className="container">
         <form action="" className="search-bar">
           <input type="text" placeholder="Enter address" className="searchText"/>
-          <button type="submit" onClick={getdata}><img src="images\search_png.png"/></button>
+          <button type="submit" onClick={getdata}>
+          {/* <img src="/images/search_png.png" alt="search"></img> */}
+          </button>
         </form>
       </div>
       
